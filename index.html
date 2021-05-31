@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Cheat Sheet for Codecademy</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+   
+   <h1>CSS Reference</h1>
+   <nav>
+      <ul>
+         <li><a href="#boxmodel">Box Model</a></li>
+         <li><a href="#position">Position</a></li>
+      </ul>
+   </nav>
+   <br>
+   <section id="boxmodel">
+      <h2>Box Model</h2>
+      <p>Para entender cómo calcular las medidas  totales de un elemento en la página, es necesario entender cómo funciona el contenido del box model.</p>
+      <table>
+         <thead>
+            <tr>
+               <th>Properties</th>
+               <th>Description</th>
+               <th>Value</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Margin</td>
+               <td>El espacio entre el &lt;border&gt; y borde exterior del elemento</td>
+               <td>En medida o auto. Ej: 6px (Abreviación para cuatro lados). Ej2: 0 auto (auto centra el izq y der)</td>
+            </tr>
+            <tr>
+               <td>Border</td>
+               <td>La línea entre el contenido y el padding</td>
+               <td>Solid, hidden, dotted, dashed, inset, outset, etc. & color & pixel size.</td>
+            </tr>
+            <tr>
+               <td>Padding</td>
+               <td>El espacio o área entre el contenido y borde. Usualmente para expandir el background color.</td>
+               <td>En medida. Ej: 6px (Abreviación para cuatro lados)</td>
+            </tr>
+            <tr>
+               <td>Box-sizing</td>
+               <td>Controla el tipo de box model que el browser usará para interpretar la web. Calcula cómo renderiza el width y height del content.</td>
+               <td>Border-box( el width es calculado como la suma del contenido, padding y border), o content-box (por default. El width es calculado solo como el width del content.</td>
+            </tr>
+         </tbody> 
+      </table>
+      <img src="./css/img/dd.jpg" alt="boxmodel">
+   </section>
+   <br>
+   <br>
+   <section id="position">
+      <h2>Position of an element</h2>
+      <p>Propiedades que ajustan la posición de un element en relación de otro.</p>
+      <table>
+         <thead>
+            <tr>
+               <th>Properties</th>
+               <th>Description</th>
+               <th>Values</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Position</td>
+               <td>Ubica al objeto en relación al documento u otro elemento</td>
+               <td>Static, Relative, Absolute, Fixed, Sticky</td>
+            </tr>
+            <tr>
+               <td>Display</td>
+               <td>Cómo debe compartir el espacio horizontal con otros elementos.</td>
+               <td>Inline, Block, Inline-block</td>
+            </tr>
+            <tr>
+               <td>Z-index</td>
+               <td>Qué tan lejos o cerca debería aparecer el elemento en la web cuando superpone a otro elemento. No funciona con static.</td>
+               <td>Nro entero</td>
+            </tr>
+            <tr>
+               <td>Float</td>
+               <td>Mueve el elemento hacia izquierda o derecha. Usualmente usado para textos de imágenes. Debe especificar medida.</td>
+               <td>Right, Left</td>
+            </tr>
+            <tr>
+               <td>Clear</td>
+               <td>Cómo debería comportarse el element cuando choca con otro.</td>
+               <td>Right, Left, Both, None</td>
+            </tr>
+         </tbody> 
+      </table>
+   </section>
+
+ </body>
+ <footer>
+    <p>Made by Elena VR. for Codecademy</p>
+ </footer>
+</html>
